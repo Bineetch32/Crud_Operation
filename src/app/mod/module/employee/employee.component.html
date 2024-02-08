@@ -1,0 +1,36 @@
+<h4 class="btn btn-danger">Register Here</h4>
+<div class="container">
+    <div class="row">
+    
+    
+
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control"  placeholder="Enter name" [(ngModel)]="css.e.name">
+    </div>
+
+      <div class="form-group col-md-6">
+          <input type="text" class="form-control"  placeholder="Enter Address" [(ngModel)]="css.e.addr">
+      </div>
+    
+    </div>
+    
+    <div class="form-group">
+        <input type="text" class="form-control"  placeholder="Enter Mobno" [(ngModel)]="css.e.mobno">
+    </div>
+    
+      <div class="form-group"> 
+          <button class="btn btn-success btn-lg btn-block" (click)="submitdata(css.e)">Submit</button>
+      </div>
+
+      <div class="alert">
+        <span class="closebtn" onclick="submitdata(css.e)"></span>
+       </div>
+    
+      <div class="form-group"> 
+          <button class="btn btn-warning btn-lg btn-block" (click)="resetdata()">reset</button>
+      </div>
+    </div>
+
+    <div>
+        <pre>{{css.e|json}}</pre>
+    </div>
